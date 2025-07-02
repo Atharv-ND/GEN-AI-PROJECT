@@ -69,27 +69,6 @@ export const ChatbotSection = () => {
       });
     } catch (error) {
       console.log("Using mock data for demo");
-      setResult({
-        department: "Cardiology - Chest Pain",
-        answer:
-          "Based on your symptoms of chest pain and shortness of breath, our AI recommends consultation with a cardiologist. These symptoms could indicate various cardiac conditions that require professional evaluation.",
-        treatment: [
-          "Rest and avoid strenuous activities",
-          "Take prescribed medications as directed",
-          "Monitor blood pressure regularly",
-          "Follow up with a cardiologist within 48 hours",
-          "Seek immediate emergency care if symptoms worsen",
-        ],
-      });
-
-      showNotification({
-        type: "info",
-        title: "Demo Mode",
-        message: "Showing sample analysis result.",
-      });
-    } finally {
-      setIsLoading(false);
-    }
   };
 
   return (
