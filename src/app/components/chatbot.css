@@ -1,0 +1,282 @@
+/* Chatbot Section Styles */
+.chatbot-section {
+    padding: 5rem 0;
+    background-color: #f9fafb;
+  }
+  
+  .chatbot-container {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .chatbot-container {
+      padding: 0 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .chatbot-container {
+      padding: 0 2rem;
+    }
+  }
+  
+  .chatbot-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .chatbot-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .chatbot-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .chatbot-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+  }
+  
+  .chatbot-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+  }
+  
+  .chatbot-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textarea-container {
+    position: relative;
+  }
+  .form-textarea {
+    width: 100%;
+    left: 1.75rem;
+    padding: 0.75rem 1rem 0.75rem 3rem; /* <-- Increased left padding */
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: all 200ms ease-in-out;
+    resize: none;
+    font-family: inherit;
+  }
+  
+  .form-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6; /* changed from ring to box-shadow */
+    border-color: transparent;
+  }  
+  
+  .form-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .form-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .form-select {
+    width: 90%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: all 200ms ease-in-out;
+    background-color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    appearance: none; /* Makes input/select look consistent */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6;
+    border-color: transparent;
+  }
+  
+  .submit-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transform: scale(1);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  .submit-button:disabled {
+    background-color: #60a5fa;
+    transform: none;
+    cursor: not-allowed;
+  }
+  
+  .loading-spinner {
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .submit-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .result-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #eff6ff;
+    border-radius: 0.75rem;
+    border: 1px solid #bfdbfe;
+  }
+  
+  .result-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .result-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #2563eb;
+  }
+  
+  .result-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .result-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .result-section-title {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  
+  .result-department {
+    color: #1d4ed8;
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+  
+  .result-analysis {
+    color: #374151;
+    line-height: 1.6;
+  }
+  
+  .result-treatment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .result-treatment-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .result-bullet {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .result-treatment-text {
+    color: #374151;
+  }
+  
+  .disclaimer {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #fefce8;
+    border: 1px solid #fde047;
+    border-radius: 0.5rem;
+  }
+  
+  .disclaimer-text {
+    font-size: 0.875rem;
+    color: #92400e;
+  }
+
+  .notification {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .notification.success {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .notification.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  .notification.info {
+    background-color: #e0f2fe;
+    color: #1e3a8a;
+  }
+  
